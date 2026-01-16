@@ -38,11 +38,11 @@ async function loadItems() {
         <td>${row.quantity ?? ""}</td>
         <td>${row.category1 ?? ""}</td>
         <td>${row.category2 ?? ""}</td>
-        <td>${row.category3 ?? ""}</td>
         <td>${row.updated_at ?? ""}</td>
       </tr>`
     )
     .join("");
 }
+
 
 loadItems();
