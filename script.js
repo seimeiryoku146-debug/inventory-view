@@ -12,7 +12,7 @@ async function loadItems() {
   statusEl.textContent = "読み込み中...";
 
   const { data, error } = await supabase
-    .from("items3")
+    .from("items2")
     .select("*")
     .order("id", { ascending: true });
 
@@ -22,11 +22,16 @@ async function loadItems() {
     return;
   }
 
-  if (!data || data.length === 0) {
-    statusEl.textContent = "データがありません";
+  if (!data) {
+    statusEl.textContent = "データが見つかりません";
     return;
   }
 
+if (data.length === 0) {
+    statusEl.textContent = "データが0件です";
+    return;
+  }
+  
   statusEl.textContent = `件数: ${data.length}`;
 
   tbody.innerHTML = data
@@ -46,6 +51,7 @@ async function loadItems() {
 
 
 loadItems();
+
 
 
 
