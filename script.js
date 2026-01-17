@@ -7,7 +7,7 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const statusEl = document.getElementById("status");
 const tbody = document.querySelector("#items-table tbody");
-const nowtime =()=> {const now = new Date()};
+const nowtime =()=> {new Date()};
 
 async function loadItems() {
   document.getElementById("update").textContent = nowtime();
@@ -49,6 +49,7 @@ if (!data || data.length === 0) {
 
 
 loadItems();
+
 
 
 
