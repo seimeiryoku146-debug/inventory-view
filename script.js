@@ -12,7 +12,7 @@ async function loadItems() {
   statusEl.textContent = "読み込み中...";
 
   const { data, error } = await supabase
-    .from("items2")
+    .from("items1")
     .select("*")
     .order("id", { ascending: true });
 
@@ -51,6 +51,7 @@ if (data.length === 0) {
 
 
 loadItems();
+
 
 
 
