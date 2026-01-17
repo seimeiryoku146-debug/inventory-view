@@ -40,9 +40,9 @@ if (data.length === 0) {
       <tr>
         <td>${row.id}</td>
         <td>${row.name ?? ""}</td>
-        <td>${row.quantity ?? ""}</td>
         <td>${row.category1 ?? ""}</td>
         <td>${row.category2 ?? ""}</td>
+        <td>${row.quantity ?? ""}</td>
         <td>${row.updated_at ?? ""}</td>
       </tr>`
     )
@@ -51,6 +51,7 @@ if (data.length === 0) {
 
 
 loadItems();
+
 
 
 
