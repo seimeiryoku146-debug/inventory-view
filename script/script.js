@@ -1,7 +1,7 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js";
 
-const SUPABASE_URL = "https://yirfxcotuftisegonswf.supabase.co"; // 自分のURLに置き換え
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlpcmZ4Y290dWZ0aXNlZ29uc3dmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgyOTUwNjIsImV4cCI6MjA4Mzg3MTA2Mn0.S_xva7CCmBZCaOG7BJ_cH0F5VAViCF8Pocgy6YKu-KM";    // 自分のanon keyに置き換え
+const SUPABASE_URL = ""; // 自分のURLに置き換え
+const SUPABASE_ANON_KEY = "";    // 自分のanon keyに置き換え
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
@@ -48,6 +48,7 @@ if (!data || data.length === 0) {
 
 
 loadItems();
+
 
 
 
